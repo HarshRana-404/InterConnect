@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/main_bg"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/iv_profile_edit"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_icon"
+        />
+    <Button
+        android:id="@+id/btn_profile_rotate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/light_blue"
+        android:textSize="18sp"
+        android:text="ROTATE"
+        android:paddingLeft="32dp"
+        android:drawablePadding="-54dp"
+        android:drawableLeft="@drawable/ic_rotate"
+        android:textAllCaps="false"
+        android:textColor="@color/main_bg"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="32dp"
+        />
+
+    <Button
+        android:id="@+id/btn_profile_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/light_blue"
+        android:textSize="18sp"
+        android:text="SET PROFILE"
+        android:textAllCaps="false"
+        android:textColor="@color/main_bg"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        />
+    <Button
+        android:id="@+id/btn_profile_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/light_blue"
+        android:textSize="18sp"
+        android:text="CANCEL"
+        android:textAllCaps="false"
+        android:textColor="@color/main_bg"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        />
+
+</LinearLayout>

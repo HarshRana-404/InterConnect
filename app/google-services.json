@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "413477856676",
+    "project_id": "interconnect-harsh",
+    "storage_bucket": "interconnect-harsh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413477856676:android:d8cbd7e74b7448e74d0d31",
+        "android_client_info": {
+          "package_name": "com.harsh.interconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0c9Spb20X81PZEZw4iXnGI6cvC1eV-dY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

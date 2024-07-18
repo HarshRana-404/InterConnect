@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/main_bg">
+
+    <ImageView
+        android:id="@+id/iv_splash_icon"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_icon"
+        />
+    <TextView
+        android:id="@+id/tv_splash_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="InterConnect"
+        android:textSize="24sp"
+        android:textColor="@color/light_blue"
+        android:textStyle="bold"
+        android:layout_marginVertical="32dp"/>
+
+</LinearLayout>

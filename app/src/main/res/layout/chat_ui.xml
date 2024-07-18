@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:id="@+id/ll_chat"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/ll_for_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tv_chat_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="04-03-2004"
+            android:textSize="14sp"
+            android:textColor="@color/main_bg"
+            android:textStyle="bold"
+            android:background="@color/main_opposite"
+            android:padding="4dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tv_chat_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textSize="20sp"
+            android:textColor="@color/main_bg"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_for_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_chat_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13:45"
+                android:textSize="10sp"
+                android:textColor="@color/main_opposite"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="8dp"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

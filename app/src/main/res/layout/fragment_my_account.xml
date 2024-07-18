@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.MyInterests"
+    android:background="@color/main_bg"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_my_account_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Account"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_alignParentTop="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginVertical="8dp"
+            android:gravity="center"
+            android:layout_below="@id/tv_my_account_title">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="8dp"
+                    android:layout_marginVertical="16dp">
+
+                    <ImageView
+                        android:id="@+id/iv_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="NotSibling"
+                        android:src="@drawable/ic_add_profile"
+                        android:scaleType="centerCrop"/>
+
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/btn_remove_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_bg"
+                    android:backgroundTint="@color/red"
+                    android:textSize="18sp"
+                    android:text="REMOVE PROFILE"
+                    android:textAllCaps="false"
+                    android:textColor="@color/main_bg"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="32dp"
+                    android:drawableRight="@drawable/ic_profile_remove"
+                    android:padding="8dp"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/et_my_account_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:hint="Name"
+                android:inputType="textCapWords"
+                android:layout_marginVertical="4dp"
+                android:drawableRight="@drawable/ic_edit"
+                />
+            <TextView
+                android:id="@+id/tv_my_account_selected_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current state: "
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"/>
+            <Spinner
+                android:id="@+id/sp_my_account_states"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:layout_marginVertical="4dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                />
+            <TextView
+                android:id="@+id/tv_my_account_selected_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current city: "
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"/>
+            <Spinner
+                android:id="@+id/sp_my_account_cities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:layout_marginVertical="4dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                />
+            <Button
+                android:id="@+id/btn_save_changes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="@color/light_blue"
+                android:textSize="18sp"
+                android:text="SAVE CHANGES"
+                android:textAllCaps="false"
+                android:textColor="@color/main_bg"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="32dp"
+                />
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="@color/red"
+                android:textSize="18sp"
+                android:text="LOGOUT"
+                android:textAllCaps="false"
+                android:textColor="@color/main_bg"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
